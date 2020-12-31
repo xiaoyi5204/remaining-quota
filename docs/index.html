@@ -104,7 +104,7 @@
     </table>
 </body>
 <script>
-    (function(){
+    function initScript(){
         //  2020-12-31 00:00:00
         var date = new Date();
         var year = date.getFullYear();
@@ -140,7 +140,10 @@
         var syNum = 3000 - result;
         document.getElementsByClassName("syme")[0].innerText = syNum
 
-    })()
-
+    }
+    initScript()
+    document.getElementsByClassName("search")[0].addEventListener("click",function(){
+    initScript()
+    })
 </script>
 </html>
